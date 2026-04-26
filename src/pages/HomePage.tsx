@@ -3,6 +3,8 @@ import { ArrowRight, Search, FileText, CheckCircle, Clock, ChevronDown, ChevronU
 import { useNavigate } from 'react-router';
 import { motion, AnimatePresence } from 'motion/react';
 
+import HeroSlider from '../components/HeroSlider';
+
 const FAQS = [
   {
     question: "How long does it take to get a new Trade License?",
@@ -52,6 +54,8 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col">
+      <HeroSlider />
+      
       {/* Hero Section */}
       <section className="bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid md:grid-cols-[3fr_2fr] gap-12 items-center">
